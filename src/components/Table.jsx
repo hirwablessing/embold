@@ -1,4 +1,6 @@
 import React from 'react'
+import {users} from "../utils/users"
+import EditIcon from '@material-ui/icons/Edit';
 
 function Table() {
     return (
@@ -22,24 +24,27 @@ function Table() {
             </tr>
           </thead>
           <tbody className="bg-white divide-y divide-gray-200">
-            <tr>
+              {users.map(user =>(
+            <tr key={user.id}>
               <td className="px-6 py-4 whitespace-nowrap">
                 <div className="flex items-center">
               
-                    <td className="text-sm font-medium text-gray-900">
-                      Jane Cooper
+                    <td className="text-sm font-medium text-gray-900 capitalize">
+                      {user.name}
                     </td>
                 </div>
               </td>
-              <td className="px-6 py-4 whitespace-nowrap">
-                Regional Paradigm Technician
+              <td className="px-6 py-4 whitespace-nowrap capitalize">
+                {user.role}
                 </td>
 
               <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                Admin
+                <EditIcon/>
               </td>
 
             </tr>
+
+              ))}
           </tbody>
         </table>
       </div>

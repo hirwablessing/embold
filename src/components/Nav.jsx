@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 
@@ -16,8 +16,8 @@ const Nav = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0">
+
             <img
-                className="h-10 w-10 rounded-full"
                 src="embold-logo.svg"
                 alt="embold logo"
                 style={{width: 90}}   
@@ -39,7 +39,7 @@ const Nav = () => {
           </div>
           <div className="hidden md:block">
             <div className="ml-4 flex items-center md:ml-6">
-            <button className="p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+            <button className="p-1 rounded-full text-gray-400">
               <div className="flex flex-col text-sm">
               <span>RENE MCKELVEY</span>
               <spn>Account Settings</spn>

@@ -7,7 +7,7 @@ import SettingsIcon from '@material-ui/icons/Settings';
 
 const Sidebar = () => {
     return (
-        <div className="h-screen z-10 bg-white shadow-lg w-16 flex flex-col gap-4 items-center pt-10">
+        <div className="sidebar z-10 bg-white shadow-lg w-16 flex flex-col gap-6 items-center pt-10" >
             <SearchIcon/>
             <HomeIcon/>
             <TimelineIcon/>
